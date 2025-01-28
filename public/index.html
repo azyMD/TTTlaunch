@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login">
+        <h1>Welcome to Tic-Tac-Toe</h1>
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <button id="loginBtn">Login</button>
+    </div>
+    <div id="lobby" style="display: none;">
+        <h2>Lobby</h2>
+        <button id="playWithBot">Play with Bot</button>
+        <h3>Available Players:</h3>
+        <ul id="playerList"></ul>
+    </div>
+    <div id="game" style="display: none;">
+        <h2>Tic-Tac-Toe</h2>
+        <div id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="quitGame">Quit to Lobby</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
